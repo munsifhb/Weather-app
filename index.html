@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorkmode app</title>
+    <link rel="stylesheet" href="dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href=""><h1>Weather app</h1></a>
+            <div class="modes">
+                <i id="dark" class="fa-solid fa-moon" style="color: #FFD700; font-size: 1.8rem;"></i>
+                <i id="dark" class="fa-solid fa-sun" style="color: #FFD700; font-size: 1.8rem;"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="sun"></div>
+<div class="wraper">
+        <input type="text" placeholder="enter city name" id="city">
+        <i id="search" class="fa fa-search" aria-hidden="true" style="color: #FFD700; font-size: 2.2rem;"></i>
+
+        <img src="image/icon.png" alt="weather icon" id="iconi">
+
+        <div class="weth">
+            <h2 id="name">Katsina</h2>
+            <p id="temp" >30°C</p>
+            <div class="div">
+            <div id="mun"><p id="hum">12%</p>Humidity</div>
+            <div id="mun"><p id="wind">23m/s</p>Wind</div>
+            </div>
+        </div>
+        
+        </div>
+    </main>
+    <script src="dark.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body {
+  font-family: 'Comic Neue', cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-position: 0 0;
+  background-image: linear-gradient(to right, #87CEEB,#9accf8,#ADD8E6) ;
+  overflow: hidden;
+  background-size: 200% 200%;
+  transition: background-image 1.5s,;
+  animation: moving 900s ease-in-out infinite;
+}
+
+@keyframes moving{
+    0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+a{
+    color: #2F4F4F;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.modes{
+    display: flex;
+    gap: 20px;
+}
+
+.sun{
+    width: 95px;
+    height: 95px;
+    background-image:radial-gradient(#FFD700,#FFA500) ;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    right: 2%;
+    box-shadow: 0px 0px 100px #FF8C00;
+    transition: 1.5s;
+    animation: sun 900s ease-in-out infinite;
+}
+
+@keyframes sun{
+    0%{right: -10%; top: 40%;}
+    25%{right: 50%; top: 0%;}
+    50%{right: 100%; top: 40%;}
+    100%{right: 200%; top: 40%;}
+}
+
+
+.wraper{
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position:relative;
+    padding: 20px;
+}
+
+#city{
+    width: 91%;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: large;
+}
+
+#iconi {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 15px auto;
+    }
+
+p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #121212;
+}
+#name{
+    text-align: center;
+    font-size: 3rem;
+    color: #121212;
+}
+#temp{
+    text-align: center;
+    font-size: 2.4rem;
+    
+}
+#mun{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #121212;
+}
+
+.div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    gap: 20px;
+}
+
+
+/* darkmode */
+body.dark-mode{
+    background-image: linear-gradient(to right, #0d0d0d,#121212,#1e1e2f);
+}
+
+body.dark-mode .sun{
+    background-image:radial-gradient(#DCDCDC,#F5F5F5) ;
+    box-shadow: 0px 0px 100px #F5F5F5;
+}
+
+body.dark-mode a{
+    color: #DCDCDC;
+}
+
+body.dark-mode #dark{
+    color: #DCDCDC;
+}
+
+body.dark-mode #mun{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #DCDCDC;
+}
+
+body.dark-mode p{
+    color: #DCDCDC;
+}
+
+body.dark-mode #name{
+    color: #DCDCDC;
+}
